@@ -6,6 +6,8 @@ int i=1;
 int j=1;
 int tabellina;
 
+    printf("\n");
+
 while (i<=10)
 {
   j=1;
@@ -15,6 +17,7 @@ while (i<=10)
     printf("%d\t", tabellina);
     j++;
 }
+    printf("\n");
     printf("\n");
 i++;
 } 
