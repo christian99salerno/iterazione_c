@@ -8,14 +8,15 @@ int tabellina;
 
 while (i<=10)
 {
+  j=1;
   while (j<=10){
     tabellina=i*j;
-    printf("%d x %d = ", i, j); 
+    printf("%dx%d=", i, j); 
     printf("%d\t", tabellina);
     j++;
 }
-i++;
     printf("\n");
+i++;
 } 
   return 0;
 }
