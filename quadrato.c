@@ -3,15 +3,10 @@
 int main () {
  
   int num = 1;
-  char segno;
-  
 
   int i = 0;
   int j;
 
-  printf("Disegna un quadrato con ");
-  scanf("%c", &segno);
-  
   do{
 
   printf("Inserisci il lato (min 1, max 20): ");
@@ -29,7 +24,7 @@ int main () {
   while(i<num){
     j=0;
     while(j<num){
-      printf("%c",segno);
+      printf("*");
       j++;
     }
     printf("\n");
