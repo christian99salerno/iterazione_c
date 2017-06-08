@@ -25,7 +25,7 @@ int main ()
   }
       printf("\n");
 i = 0;
-   while(i < num){
+   while(i < num-2){
     printf("*");
      j=1;
    while(j < num-1){
