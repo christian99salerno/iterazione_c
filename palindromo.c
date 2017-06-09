@@ -5,31 +5,33 @@ int main ()
 
 int num = 0;
 
+int a = 0;
+int b = 0;
 int c = 0;
 int d = 0;
 int e = 0;
-int f = 0;
 
 do{
   
   printf("Inserisci un numero ");
   scanf("%d", &num);
 
-  if(num<10000 && num >= 100000)
-    printf("Inserisci un num di 5 cifre\n");
+  if(num<10000 || num > 99999)
+    printf("Il numero deve avere 5 cifre\n");
 }
+while (num < 10000 || num > 99999);
 
-while (num < 10000 && num >= 100000);
-
+a = num%10;
+num/=10;
+b = num%10;
+num/=10;
 c = num%10;
 num/=10;
 d = num%10;
-num/=100;
-e = num%10;
 num/=10;
-f = num;
+e = num;
 
-if(e == d && f == c)
+if(e == a && d == b)
    printf("Il numero e' palindromo\n");
 
 else
