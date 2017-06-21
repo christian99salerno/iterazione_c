@@ -1,32 +1,37 @@
 #include <stdio.h>
+#include <math.h>
+
 
 int main () {
- 
 
 int num = 0;
+int binario = 0;
+int esponente = 0;
+int cambio = 0;
+int numero_decimale=0;
 
-int bit = 0;
+/*do{
+*/
+printf("Inserisci un numero binario: ");
+scanf("%d", &binario);
+/*
 
-do {
-
-  printf("Inserisci un numero binario ");
-  scanf("%d", &num);
-
-  bit = 1;
-
-  while (num!=0){
-  if (num%10 != 1 || num%10 != 0){
-    bit = 0;
-  }
-    num/=10;
-   }
-  if (bit==0)
-    printf("Il numero deve essere binario\n");
 }
-while(bit==0);
+while();*/
 
-if (bit == 1)
-  printf("Il numero e' binario\n");
-  
+num = binario;
+
+while (num != 0){
+
+cambio = (num%10) * pow(2, esponente);
+
+numero_decimale+=cambio;
+
+num/=10;
+esponente++;
+}
+
+printf("%d(2) = %d(10)\n",binario, numero_decimale);
+
   return 0;
 }
