@@ -7,8 +7,6 @@ int num = 0;
 
 int a,b,c,d;
 
-int t1,t2;
-
 do{
 
 printf("Numero da crittografare: ");
@@ -39,18 +37,7 @@ while (num < 1000 || num > 9999);
  
  /*riordinazione del numero con le nuove cifre*/
  
- /*la 1° cifra = alla 3° e la 3° = alla 1°*/
- t1 = a;
- a = c; 
- c = t1;
- 
- /*la 2° cifra = alla 4° e la 4° = alla 2°*/
- t2 = b;
- b = d;
- d = t2;
-
- num = a; 
- num = ((num*10+b)*10+c)*10+d;
+ num = ((c*10+d)*10+a)*10+b;
 
  printf("Numero crittografato: %d\n",num);
 
