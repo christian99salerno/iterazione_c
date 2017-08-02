@@ -12,11 +12,11 @@ do{
 printf("Numero da crittografare: ");
 scanf("%d",&num);
 
-if (num < 1000 || num > 9999)
+if (num > 9999)
 printf("Reinserisci il numero con 4 cifre\n");
 }
-while (num < 1000 || num > 9999);
- 
+while (num > 9999);
+
  d = num%10; /*estrazione 4° cifra*/
  d = (d+7)%10; /*modifica*/
  num/=10; /*viene rimossa la 4° cifra*/
