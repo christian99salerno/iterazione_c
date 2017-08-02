@@ -16,17 +16,27 @@ if (num < 1000 || num > 9999)
 printf("Reinserisci il numero con 4 cifre\n");
 }
 while (num < 1000 || num > 9999);
-
- d = (num%10 + 7)%10;
- num/=10;
- c = (num%10 + 7)%10;
- num/=10;
- b = (num%10 + 7)%10;
- num/=10;
- a = (num%10 + 7)%10;
- num/=10;
  
- num = c;
+ d = num%10; /*estrazione 4° cifra*/
+ d = (d+7)%10; /*modifica*/
+ num/=10; /*viene rimossa la 4° cifra*/
+
+ c = num%10; /*estrazione 3° cifra*/
+ c = (c+7)%10; /*modifica*/
+ num/=10; /*viene rimossa la 3° cifra*/
+
+ b = num%10; /*estrazione 2° cifra*/
+ b = (b+7)%10; /*modifica*/
+ num/=10; /*viene rimossa la 2° cifra*/
+
+ a = num%10; /*estrazione 1° cifra*/
+ a = (a+7)%10; /*modifica*/
+ num/=10; /*viene rimossa la 1° cifra*/
+
+ /*num = 0*/
+ 
+ /*riordinazione del numero con le nuove cifre*/
+ num = c; 
  num = ((num*10+d)*10+a)*10+b;
 
  printf("Numero crittografato: %d\n",num);
