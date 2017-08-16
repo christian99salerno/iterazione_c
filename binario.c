@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 int main () {
 
 int num = 0;
@@ -9,14 +8,13 @@ int val = 1;
 int cambio = 0;
 int numero_decimale=0;
 
-/*do{
-*/
+do{
+
 printf("Inserisci un numero binario: ");
 scanf("%d", &binario);
-/*
 
 }
-while();*/
+while();
 
 num = binario;
 
