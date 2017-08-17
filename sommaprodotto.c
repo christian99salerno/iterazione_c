@@ -8,15 +8,11 @@ int pro = 1;
 
 int i;
 
-for (i=2;i<31;i++){
-  if(i%2==0){
+for (i=2;i<31;i+=2){
     sum+=i;
-  }
 }
-for (i=1;i<16;i++){
-  if(i%2!=0){
+for (i=1;i<16;i+=2){
     pro*=i;
-  }
 }
 
 printf("La somma dei pari e' %d\n",sum);
