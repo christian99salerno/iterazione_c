@@ -3,6 +3,9 @@
 int main () {
 
 int num = 0;
+int num2 = 0;
+int cont = 0;
+int cont2 = 0;
 int binario = 0;
 int val = 1;
 int cambio = 0;
@@ -13,18 +16,30 @@ do{
 printf("Inserisci un numero binario: ");
 scanf("%d", &binario);
 
-}
-while();
-
 num = binario;
+cont = 0;
+cont2 = 0;
 
-while (num != 0){
+while(num!=0){
+ if(num%10==1 || num%10==0){
+ cont++;
+ }
+ num/=10;
+ cont2++;
+}
 
-cambio = (num%10) * val;
+}
+while(cont!=cont2);
+
+num2 = binario;
+
+while (num2 != 0){
+
+cambio = (num2%10) * val;
 
 numero_decimale+=cambio;
 
-num/=10;
+num2/=10;
 
 val = val * 2;
 
