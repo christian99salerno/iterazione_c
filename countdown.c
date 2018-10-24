@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main ()
+
 {
 
 int num;
@@ -12,12 +13,15 @@ if (num<=0){
   printf("Errore il numero deve essere positivo\n");
 }
 
-  else {
-while(num!=-1)
+else {
+
+while(num>=0)
 {
   printf("Countdown: %d\n", num);
   num--;
 }
  }
+
 return 0;
- }
+ 
+}
