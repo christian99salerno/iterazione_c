@@ -18,7 +18,7 @@ do{
  }
  while(num<0);
 
-while ( num != 0 ){
+while ( num > 0 ){
      if (num%10 == 7){
         cont ++;
      }
