@@ -22,7 +22,7 @@ somma+=numbers[i];
 
 }
 
-media=somma/10;
+media=(double)somma/10.0;
 
 printf("\n");
 
