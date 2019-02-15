@@ -13,7 +13,7 @@ printf("Somma e Media\n");
 
 printf("\n");
 
-for(i=1; i<=10; i++) {
+for(i=0; i<=9; i++) {
 
 printf("? ");
 scanf("%d", &numbers[i]);
@@ -26,7 +26,7 @@ media=(double)somma/10.0;
 
 printf("\n");
 
-for(i=1; i<=10; i++) {
+for(i=0; i<=9; i++) {
 
   printf("number[%d] = %d\n", i, numbers[i]);
 
